@@ -22,43 +22,11 @@ Sample visualisation of sales records in given time range for bussiness analysis
 
 ## Web App Demo
 
-<i> in preparation </i>
+![alt text](https://github.com/kwarc-agat/currency-rates/blob/master/demo_images/img_1.jpg)
 
-## API Demo
+![alt text](https://github.com/kwarc-agat/currency-rates/blob/master/demo_images/img_2.jpg)
 
-(type following URLs in your browser)
-
-Browsing all currency and sales records in the database:
-
-```sh
-http://localhost:8000/
-http://localhost:8000/currency/
-http://localhost:8000/sales/
-```
-
-**Ex.1, 2:** Get USD exchange rate from the date range
-
-```sh
-http://localhost:8000/rate/31-10-2013/01-10-2013
-http://localhost:8000/rate/15-08-2014
-```
-
-**Ex. 3:** Get sales value in PLN and USD from the date range:
-
-```sh
-http://localhost:8000/sale/17-03-2013/05-03-2013
-http://localhost:8000/sale/08-08-2012
-```
-
-
-Get "unrecognized url" response when date range is not in the database
-
-```sh
-http://localhost:8000/rate/31-10-2020
-http://localhost:8000/sale/11-12-2002
-```
-
-**Ex.4:** Number of requests is limited to 10 per minute per user - exceeding the limit results in "404 Page Not Found"
+![alt text](https://github.com/kwarc-agat/currency-rates/blob/master/demo_images/img_3.jpg)
 
 ## Getting started
 
@@ -86,3 +54,37 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+## API Demo
+
+(after running the server as described above type following URLs in your browser)
+
+Browsing all currency and sales records in the database:
+
+```sh
+http://localhost:8000/
+http://localhost:8000/currency/
+http://localhost:8000/sales/
+```
+Get USD exchange rate from the date range
+
+```sh
+http://localhost:8000/rate/31-10-2013/01-10-2013
+http://localhost:8000/rate/15-08-2014
+```
+
+Get sales value in PLN and USD from the date range:
+
+```sh
+http://localhost:8000/sale/17-03-2013/05-03-2013
+http://localhost:8000/sale/08-08-2012
+```
+
+
+Get "unrecognized url" response when date range is not in the database
+
+```sh
+http://localhost:8000/rate/31-10-2020
+http://localhost:8000/sale/11-12-2002
+```
+
+Number of requests is limited to 10 per minute per user - exceeding the limit results in "404 Page Not Found"
