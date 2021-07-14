@@ -31,7 +31,7 @@ Sample visualisation of sales records in given time range for bussiness analysis
 ## Getting started
 
 ```sh
-git clone https://github.com/kwarc-agat/skryptowe20.git
+git clone <some url>
 ```
 Navigate to project directory and create virtual environment:
 
